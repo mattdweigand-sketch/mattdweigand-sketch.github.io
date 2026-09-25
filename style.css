@@ -711,115 +711,6 @@ a.text-link:hover {
 /* ------------------------------------------------------------------
    Writing
 ------------------------------------------------------------------ */
-.posts {
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: var(--space-12) var(--space-8);
-}
-
-.post {
-  grid-column: 1 / span 12;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: var(--space-8);
-  padding-top: var(--space-5);
-  border-top: 1px solid var(--color-rule);
-  text-decoration: none;
-  color: inherit;
-  transition: border-color var(--transition-interactive);
-}
-
-.post:hover {
-  border-top-color: var(--color-primary);
-}
-
-.post:hover h3 {
-  color: var(--color-primary);
-}
-
-.post h3 {
-  transition: color var(--transition-interactive);
-}
-
-.post .meta {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--space-4);
-}
-
-.post h3 {
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-  margin-top: var(--space-4);
-}
-
-.post p {
-  margin-top: var(--space-4);
-  color: var(--color-text-muted);
-  font-size: var(--text-sm);
-}
-
-.post .read {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  font-size: var(--text-sm);
-  font-weight: 500;
-}
-
-.post .read svg {
-  width: 14px;
-  height: 14px;
-  transition: transform var(--transition-interactive);
-}
-
-.post:hover .read svg {
-  transform: translate(2px, -2px);
-}
-
-.post-feature .meta .label:last-child {
-  color: var(--color-primary);
-}
-
-.post-feature h3 {
-  font-size: var(--text-2xl);
-  letter-spacing: -0.03em;
-  line-height: 1.05;
-  max-width: 20ch;
-}
-
-.post-feature p {
-  font-size: var(--text-base);
-  max-width: 52ch;
-}
-
-@media (width >= 640px) {
-  .post {
-    grid-column: span 6;
-  }
-
-  .post-feature {
-    grid-column: span 12;
-  }
-}
-
-@media (width >= 1024px) {
-  .posts {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .post {
-    grid-column: auto;
-  }
-
-  .post-feature {
-    grid-column: 1 / -1;
-  }
-}
 
 /* Built rows */
 .built-list {
@@ -946,55 +837,6 @@ a.text-link:hover {
 }
 
 /* Tools */
-.tools {
-  margin-top: clamp(var(--space-12), 5vw, var(--space-20));
-}
-
-.tools-title {
-  font-family: var(--font-display);
-  font-size: var(--text-lg);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.tools-grid {
-  display: grid;
-  gap: var(--space-8) var(--space-8);
-  margin-top: var(--space-6);
-}
-
-.tool-group {
-  padding-top: var(--space-4);
-  border-top: 1px solid var(--color-rule);
-}
-
-.tool-group .label {
-  color: var(--color-text-muted);
-}
-
-.tool-group p {
-  margin-top: var(--space-3);
-  font-size: var(--text-base);
-  max-width: 28ch;
-}
-
-@media (width >= 640px) {
-  .tools-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (width >= 1024px) {
-  .tools-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-}
-
-.posts-foot {
-  margin-top: var(--space-8);
-  display: flex;
-  justify-content: flex-end;
-}
 
 /* ------------------------------------------------------------------
    Contact
@@ -1135,7 +977,6 @@ blockquote {
 @media print {
   .site-header,
   .hero-actions,
-  .posts-foot,
   .mobile-nav,
   .site-footer .text-link {
     display: none !important;
@@ -1159,8 +1000,7 @@ blockquote {
     filter: none;
   }
 
-  .post::after,
-  .built-row::after,
+  a.built-row::after,
   .contact-links a::after {
     content: attr(href);
     display: block;
@@ -1168,5 +1008,56 @@ blockquote {
     font-size: 0.75rem;
     color: #555;
     word-break: break-all;
+  }
+}
+
+/* Work stories */
+.story-body {
+  grid-column: 1 / span 12;
+  max-width: 60ch;
+}
+
+.story-body p {
+  max-width: none;
+}
+
+.story-body p + p {
+  margin-top: var(--space-3);
+}
+
+.story-body .story-result {
+  color: var(--color-text);
+  font-weight: 500;
+}
+
+.story:hover h3 {
+  color: inherit;
+}
+
+.work-before {
+  margin-top: var(--space-8);
+  max-width: 60ch;
+}
+
+.work-before .label {
+  display: block;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+
+.work-before p {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+}
+
+@media (width >= 840px) {
+  .story-body {
+    grid-column: 5 / span 8;
+  }
+}
+
+@media (width >= 1024px) {
+  .story-body {
+    grid-column: 5 / span 5;
   }
 }

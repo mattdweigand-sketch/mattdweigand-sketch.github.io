@@ -6,13 +6,13 @@
     <title>Matt Weigand</title>
     <meta
       name="description"
-      content="Matt Weigand. Enterprise software since 2013, AI deployments since 2022. Things I have built, short posts on AI in real work, and a bit about me."
+      content="Matt Weigand. Enterprise software since 2013, AI deployments since 2022. Things I have built, client projects and what they returned, and a bit about me."
     />
     <meta property="og:type" content="profile" />
     <meta property="og:title" content="Matt Weigand" />
     <meta
       property="og:description"
-      content="Enterprise software since 2013. Things I have built, short posts on AI in real work, and a bit about me."
+      content="Enterprise software since 2013. Things I have built, client projects and what they returned, and a bit about me."
     />
     <meta property="og:url" content="https://mattdweigand-sketch.github.io/" />
     <meta property="og:image" content="https://mattdweigand-sketch.github.io/assets/og.png" />
@@ -30,7 +30,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./base.css" />
-    <link rel="stylesheet" href="./style.css?v=8" />
+    <link rel="stylesheet" href="./style.css?v=22" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -62,7 +62,7 @@
         <nav class="site-nav" aria-label="Primary">
           <a href="#about">About</a>
           <a href="#built">Built</a>
-          <a href="#writing">Writing</a>
+          <a href="#work">Results</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -84,7 +84,7 @@
           <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#built">Built</a></li>
-            <li><a href="#writing">Writing</a></li>
+            <li><a href="#work">Results</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
@@ -95,7 +95,7 @@
       <!-- Hero -->
       <section class="hero container" aria-labelledby="hero-title">
         <div class="hero-top">
-          <span class="label">Projects, writing, interests</span>
+          <span class="label">Projects, results, interests</span>
           <span class="label">San Francisco, California</span>
         </div>
 
@@ -107,7 +107,7 @@
               deploy AI.
             </p>
             <p class="sub">
-              This site collects the projects, the writing, and a bit about me.
+              This site collects the projects, the client work, and a bit about me.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="https://www.linkedin.com/in/weigandmatthew" target="_blank" rel="noopener noreferrer">
@@ -169,13 +169,6 @@
                 sleep. And when it writes to a system of record, someone approves it first.
               </blockquote>
               <cite class="label">From a LinkedIn post, August 2026</cite>
-
-              <p class="label focus-label">Now</p>
-              <ul class="focus-list">
-                <li>Moving my pipeline research to scheduled background jobs</li>
-                <li>Refactoring my agent-readable wiki templates</li>
-                <li>Writing short posts on AI in real work</li>
-              </ul>
             </aside>
           </div>
           </div>
@@ -194,7 +187,7 @@
             <div>
               <h2 id="built-title">Things I have built.</h2>
               <p class="lede">
-                Tools and systems from the last two years. Each one links to the code or the post that describes it.
+                Open source templates for working with AI agents. Each one links to the code.
               </p>
             </div>
           </div>
@@ -227,189 +220,103 @@
               <p>Call prep, interaction notes, due-task triage, pipeline review, and a weekly forecast for a salesperson working with an AI assistant. The assistant gathers evidence and proposes CRM changes. A person approves each one. Nothing sends email.</p>
               <span class="read">View on GitHub <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
             </a>
-            <a class="built-row" href="https://www.linkedin.com/posts/weigandmatthew_i-spent-the-last-year-building-a-personal-activity-7442914532831969280-xLa5" target="_blank" rel="noopener noreferrer">
-              <span class="label idx">04</span>
-              <div class="built-title">
-                <h3>A memory layer for my AI tools</h3>
-                <span class="label">Personal system, 2025 to 2026</span>
-              </div>
-              <p>Every conversation with AI started from zero. I built a persistent layer that stores decisions, reasoning, domain knowledge, and corrections across every conversation. The AI did not get smarter. It got useful.</p>
-              <span class="read">Read the post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-            <a class="built-row" href="https://www.linkedin.com/feed/update/urn:li:activity:7491489890912632832/" target="_blank" rel="noopener noreferrer">
-              <span class="label idx">05</span>
-              <div class="built-title">
-                <h3>Pipeline work as background jobs</h3>
-                <span class="label">Scheduled automations, 2026</span>
-              </div>
-              <p>Account research, call prep, and pipeline hygiene sweeps run on a schedule. I used to pick which accounts got the research run. Now they all do.</p>
-              <span class="read">Read the post <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
           </div>
 
-          <div class="tools reveal">
-            <h3 class="tools-title">Tools I use</h3>
-            <div class="tools-grid">
-              <div class="tool-group">
-                <span class="label">AI</span>
-                <p>Perplexity, Codex, Claude Code</p>
-              </div>
-              <div class="tool-group">
-                <span class="label">Systems of record</span>
-                <p>Salesforce, Gmail, Google Calendar, Google Drive, Slack, Linear</p>
-              </div>
-              <div class="tool-group">
-                <span class="label">Data and research</span>
-                <p>Snowflake, Apollo, Momentum call transcripts</p>
-              </div>
-              <div class="tool-group">
-                <span class="label">Build and hardware</span>
-                <p>GitHub, Python, MacBook Pro, Plaud recorder</p>
-              </div>
-            </div>
-          </div>
           </div>
         </div>
       </section>
 
-      <!-- Writing -->
-      <section class="section" id="writing" aria-labelledby="writing-title">
+      <!-- Results -->
+      <section class="section" id="work" aria-labelledby="work-title">
         <div class="container section-grid">
           <div class="section-label reveal">
             <span class="index-big" aria-hidden="true">03</span>
-            <span class="label">Writing</span>
+            <span class="label">Results</span>
           </div>
           <div class="section-body">
           <div class="section-head reveal">
             <div>
-              <h2 id="writing-title">Short takes on AI in real work.</h2>
-              <p class="lede">Selected LinkedIn posts, 2026. Each one opens on LinkedIn.</p>
+              <h2 id="work-title">Projects and what they returned.</h2>
+              <p class="lede">Workflow and transformation projects with clients, and the business impact. Names removed, details changed.</p>
             </div>
           </div>
 
-          <div class="posts reveal">
-            <a class="post post-feature" href="https://www.linkedin.com/feed/update/urn:li:activity:7505275611121102848/" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta"><span class="label">September 2026</span><span class="label">Featured</span></div>
-                <h3>You should care more about your AI's accuracy.</h3>
-                <p>AI accuracy depends on whether the right evidence reaches the model. If retrieval misses a relevant source, everything that follows starts with an incomplete picture.</p>
+          <div class="built-list reveal">
+            <article class="built-row story">
+              <span class="label idx">01</span>
+              <div class="built-title">
+                <h3>Qualify the contractor before underwriting does</h3>
+                <span class="label">Home improvement lender, about 10,000 contractors on its network</span>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-
-            <a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7496618960193503233/" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta"><span class="label">August 2026</span></div>
-                <h3>The most useful thing AI did for me this week was decide not to do the work.</h3>
-                <p>I asked it to draft a follow-up. It checked Salesforce and Gmail. The prospect already had two emails from my team and a task booked. It killed the draft. Output is not the same as value.</p>
+              <div class="story-body">
+              <p>The growth team had built a lead agent themselves. It pulled contractors from a data vendor by trade, revenue band, and geography, checked them against the CRM, enrolled them in email sequences, and opened an opportunity for each one. It worked, and it had two problems. It was blind to any contractor not in the vendor's database, and more than half the applications it produced were declined in underwriting, fifteen days after the contractor applied.</p>
+              <p>We put a research layer ahead of the vendor pull. Perplexity searches the public web for contractors that fit the profile, then checks each one against the lender's acceptance criteria before anyone pays for a record. Licensing, years in business, review history, complaint records, bankruptcy filings, and a working phone and email. The CRM check moved from exact name matching to a scored match that a person reviews when it is close. Enrichment reads the contractor's own site, Facebook page, and Google reviews to draft the first email.</p>
+              <p>Nothing sends and nothing writes to the CRM until a rep approves the batch.</p>
+              <p class="story-result">Sixty-day pilot, 5,000 leads. Approval rate on submitted applications went from 45 percent to 82 percent. Cost per qualified lead fell 38 percent because fewer records were bought. Cold email engagement held above 1 percent. One in five qualified contractors was not in the data vendor at all.</p>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-
-            <a class="post" href="https://www.linkedin.com/posts/weigandmatthew_computer-now-works-in-email-activity-7495514769597214720-SK7i" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta"><span class="label">August 2026</span></div>
-                <h3>An email lands. Something has to actually happen.</h3>
-                <p>That information has to touch a system of record. Notes, tasks, and follow-ups have to be recorded. Today most of that is copy, paste, retype, and remember.</p>
+            </article>
+            <article class="built-row story">
+              <span class="label idx">02</span>
+              <div class="built-title">
+                <h3>Month-end close, three days shorter</h3>
+                <span class="label">Multi-site healthcare services group, about 400 people</span>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-
-            <a class="post" href="https://www.linkedin.com/posts/weigandmatthew_most-general-purpose-ai-agents-are-coding-activity-7494766171548835840-970m" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta"><span class="label">August 2026</span></div>
-                <h3>Most general-purpose AI agents are coding tools rebranded for business work.</h3>
-                <p>
-                  The work that runs a company crosses apps. It carries state across weeks and quarters. It runs while you
-                  sleep. And when it writes to a system of record, someone approves it first.
-                </p>
+              <div class="story-body">
+              <p>Finance closed the books in nine business days. Most of that was invoice matching and intercompany reconciliations done by hand from ERP exports.</p>
+              <p>We mapped the close step by step with the controller, then built a workflow that three-way matches invoices to purchase orders and receipts, routes exceptions to a review queue, and drafts the reconciliation memos. Nothing posts to the ERP until the controller approves it.</p>
+              <p class="story-result">Close went from nine days to six. About 1,400 invoices a month match without a person touching them. Exceptions run near six percent. Two accountants moved from matching to analysis.</p>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-
-            <a class="post" href="https://www.linkedin.com/posts/weigandmatthew_everyone-points-ai-at-the-half-of-the-job-activity-7493679010305003520-xnX1" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta">
-                  <span class="label">August 2026</span>
-                  
-                </div>
-                <h3>Everyone points AI at the half of the job it is worst at.</h3>
-                <p>
-                  The research half is close to superhuman. The writing half is what everyone tries to automate, and it is
-                  the weak half. The jagged edge cuts opposite to how most people are using these tools. So mine researches
-                  and I decide what gets written.
-                </p>
+            </article>
+            <article class="built-row story">
+              <span class="label idx">03</span>
+              <div class="built-title">
+                <h3>2,300 leases, abstracted and watched</h3>
+                <span class="label">Commercial real estate owner and operator</span>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-
-            <a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7491489890912632832/" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta"><span class="label">August 2026</span></div>
-                <h3>I didn't change a single workflow this week. My automations still got 72% cheaper.</h3>
-                <p>Most of my pipeline work now runs as background jobs. I used to pick which accounts got the research run. Now they all do. Cheaper and better usually don't arrive together.</p>
+              <div class="story-body">
+              <p>Leases lived as PDFs. Rent steps, option windows, and expirations were tracked in spreadsheets by whoever had time. Notices got missed.</p>
+              <p>We built a workflow that reads each lease into a structured abstract, writes it to the property management system once a paralegal approves it, and sets alerts on every critical date. The paralegal reviews the abstract against the source pages side by side.</p>
+              <p class="story-result">All 2,300 leases abstracted in six weeks, against an internal estimate of fourteen months by hand. No missed renewal notices in the two quarters since. Two option windows caught early, worth about 1.8 million dollars in rent.</p>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-
-            <a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7489007488592134145/" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta"><span class="label">July 2026</span></div>
-                <h3>Most security teams have no visibility into what agents on laptops actually do.</h3>
-                <p>Agents can run shell commands, read files, and reach credentials. Numbat is one open source Go binary with 52 detection rules that can block a risky action before it runs. Detection stays local.</p>
+            </article>
+            <article class="built-row story">
+              <span class="label idx">04</span>
+              <div class="built-title">
+                <h3>Investor reporting without the scramble</h3>
+                <span class="label">Private credit manager, 40 funds</span>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-
-            <a class="post" href="https://www.linkedin.com/feed/update/urn:li:activity:7486511794186838016/" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta"><span class="label">July 2026</span></div>
-                <h3>The question stops being which model and starts being which layer picks.</h3>
-                <p>Jensen Huang's first X post argued the world needs both closed and open frontier models. With many strong models, someone has to route the right one to the right question, with the right context and data.</p>
+              <div class="story-body">
+              <p>Every quarter, four people spent two weeks producing investor letters and capital account statements. One restatement the prior year had cost a difficult call with a large LP.</p>
+              <p>We connected the fund administration data, built a templated drafting workflow, and put a reviewer gate on every number. Each figure carries a link back to the ledger entry it came from.</p>
+              <p class="story-result">The quarterly cycle went from ten business days to three. The team took on two new funds without adding headcount. No restatements since.</p>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-
-            <a class="post" href="https://www.linkedin.com/posts/weigandmatthew_ive-posted-a-lot-recently-about-ai-and-activity-7446885704229629952-ZAY4" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta"><span class="label">April 2026</span></div>
-                <h3>Before any of it works, your data has to be clean.</h3>
-                <p>
-                  People can look at two conflicting numbers and use judgment. Agents cannot. They pick wrong, stall out, or
-                  proceed on bad data without flagging it.
-                </p>
+            </article>
+            <article class="built-row story">
+              <span class="label idx">05</span>
+              <div class="built-title">
+                <h3>A proposal desk for a consulting firm</h3>
+                <span class="label">Environmental and safety consultancy, about 250 people</span>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-
-            <a class="post" href="https://www.linkedin.com/posts/weigandmatthew_junipersquare-ai-fundadmin-activity-7445086529133375488-MEpF" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta"><span class="label">April 2026</span></div>
-                <h3>The most dangerous AI pitch in private markets is a great search tool that calls itself an agent.</h3>
-                <p>
-                  A search layer makes fragmented data findable. An orchestration layer does the job. The IR team is not
-                  doing the work. They are approving it.
-                </p>
+              <div class="story-body">
+              <p>Requests for proposals arrived by email and got answered on senior consultants' evenings. Win rate sat at 22 percent, and good bids were skipped for lack of time.</p>
+              <p>We built a capture workflow that scans the inbox for RFPs, scores each one against the firm's go and no-go rubric, assembles a first draft from an approved answer library, and routes it to a principal for edits. The principal decides what goes out.</p>
+              <p class="story-result">First drafts in two hours instead of two days. Proposals submitted up 40 percent. Win rate at 31 percent within two quarters.</p>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
-
-            <a class="post" href="https://www.linkedin.com/posts/weigandmatthew_i-spent-the-last-year-building-a-personal-activity-7442914532831969280-xLa5" target="_blank" rel="noopener noreferrer">
-              <div>
-                <div class="meta"><span class="label">March 2026</span></div>
-                <h3>The highest-leverage investment in any AI system is the context layer, not the execution layer.</h3>
-                <p>Execution capacity is abundant. It is getting cheaper by the month. Context is the scarce resource.</p>
+            </article>
+            <article class="built-row story">
+              <span class="label idx">06</span>
+              <div class="built-title">
+                <h3>Regulatory change, read once, acted on</h3>
+                <span class="label">Regional bank, about 750 people</span>
               </div>
-              <span class="read">Read on LinkedIn <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg></span>
-            </a>
+              <div class="story-body">
+              <p>Compliance spent about twelve hours a week reading regulator sites and mapping changes to internal policies. Memos lagged the changes by weeks.</p>
+              <p>We built a monitoring workflow that scans the agreed sources, matches each change to the policies it touches, and drafts an impact memo with citations. A compliance officer reviews and signs each memo before it is filed.</p>
+              <p class="story-result">Monitoring went from twelve hours a week to two. Every memo cites its source. The next internal audit found no unmapped changes.</p>
+              </div>
+            </article>
           </div>
 
-          <div class="posts-foot reveal">
-            <a class="btn btn-ghost" href="https://www.linkedin.com/in/weigandmatthew/recent-activity/all/" target="_blank" rel="noopener noreferrer">
-              All posts on LinkedIn
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
-            </a>
-          </div>
           </div>
         </div>
       </section>
@@ -454,6 +361,6 @@
       </div>
     </footer>
 
-    <script src="./app.js?v=8" defer></script>
+    <script src="./app.js?v=22" defer></script>
   </body>
 </html>
